@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-Pk-jTD">
+                                <rect key="frame" x="38.5" y="318.5" width="298" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="App Store 评分(无版本限制) 跳转App Store ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="systemComentAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZw-lz-uH8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-Qg-85Y">
+                                <rect key="frame" x="72.5" y="370.5" width="230" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="App Store 评分 （在应用内评分）">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="systemComent2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDW-Th-GAM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sph-Nv-lyD">
+                                <rect key="frame" x="114.5" y="422.5" width="145" height="30"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <state key="normal" title="App Store 评分 10.3+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="systemComent3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNS-TC-fFz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sph-Nv-lyD" firstAttribute="top" secondItem="3oU-Qg-85Y" secondAttribute="bottom" constant="22" id="5Qu-m5-Pqf"/>
+                            <constraint firstItem="3oU-Qg-85Y" firstAttribute="centerX" secondItem="jpe-Pk-jTD" secondAttribute="centerX" id="D8J-0B-xZt"/>
+                            <constraint firstItem="jpe-Pk-jTD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jeh-1z-LeR"/>
+                            <constraint firstItem="jpe-Pk-jTD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R53-Cg-m1S"/>
+                            <constraint firstItem="Sph-Nv-lyD" firstAttribute="centerX" secondItem="jpe-Pk-jTD" secondAttribute="centerX" id="pG1-cJ-Vin"/>
+                            <constraint firstItem="3oU-Qg-85Y" firstAttribute="top" secondItem="jpe-Pk-jTD" secondAttribute="bottom" constant="22" id="sB0-zA-sUo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
